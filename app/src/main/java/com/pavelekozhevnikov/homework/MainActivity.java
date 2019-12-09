@@ -2,8 +2,10 @@ package com.pavelekozhevnikov.homework;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
@@ -64,5 +66,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+
+        Button button_hw2=findViewById(R.id.button_hw2);
+        button_hw2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TextInputActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
