@@ -2,6 +2,7 @@ package com.pavelekozhevnikov.homework;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,15 @@ public class TextInputActivity extends AppCompatActivity {
                             }
                         }).show();
 
+            }
+        });
+
+        Button button_hw3=findViewById(R.id.button_hw3);
+        button_hw3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TextInputActivity.this, Homework3Activity.class);
+                startActivity(intent);
             }
         });
     }
