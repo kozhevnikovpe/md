@@ -64,14 +64,14 @@ public class Homework4Activity extends AppCompatActivity
             }
         });
 
-        /*Button button_hw4=findViewById(R.id.button_hw4);
+        Button button_hw4=findViewById(R.id.button_hw4);
         button_hw4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Homework4Activity.this, Homework5Activity.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 
     @Override
