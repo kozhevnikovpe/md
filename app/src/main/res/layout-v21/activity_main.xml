@@ -70,10 +70,6 @@
             android:layout_height="30dp"
             android:max="100"
             android:progress="1" />
-
-
-
-
     </LinearLayout>
 
     <Button
